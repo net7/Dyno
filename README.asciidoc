@@ -3,8 +3,9 @@ The Dyno widget documentation
 Riccardo Giomi <giomi@netseven.it>
 V1.0, 1th of December 2010
 
-Dyno is a widget that queries the sindice engine (http://sindice.org/)
-about one or more URIS requested by the user, and creates a pretty
+Dyno is a simple widget based on JQuery and Sindice (http://sindice.org/)
+to add some Linked Data to your website. It does so by querying Sindice
+about one or more URIS requested by the user, and creating a pretty
 table with the results. Results can be filtered by "source" (where
 sindice found the information).
 
@@ -356,3 +357,9 @@ CSS Style
 CSS stylesheets and images where realized for the Islamic Art demo
 (http://islamicart.muruca.org/), and we thought it nice to leave them
 here, they were quite nice, after all.
+
+License
+-------
+Copyright (c) 2010 Net7 SRL, <http://www.netseven.it/>
+This Software is released under the terms of the MIT License
+See LICENSE.TXT for the full text of the license.

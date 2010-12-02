@@ -1,3 +1,6 @@
+/// Copyright (c) 2010 Net7 SRL, <http://www.netseven.it/>
+/// This Software is released under the terms of the MIT License
+/// See LICENSE.TXT for the full text of the license.
 $(function() {
     var settings = {
         values: null,
@@ -69,12 +72,3 @@ function singleResultSlide() {
         $(this).children("p").toggleClass("closed");
     });
 }
-
-
-
-
-
-
-
-
-
