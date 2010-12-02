@@ -96,8 +96,6 @@ The main configuration for the widget is at the start of
 dyno/javascripts/main.js. 
 
 *javascripts/main.js*
-
-[source, javascript]
 ----
     var settings = {
         values: null,
@@ -140,7 +138,6 @@ of an array.
 
 The settings are read later in the code, you have time until this
 call:
-[source, javascript]
 ----
         $("#dyno-attributes").dyno(settings);
 ----
@@ -149,7 +146,6 @@ to set your uris in any dynamic way that suits your needs.
 If no values for uris are given, Dyno defaults to the value value of the first
 *rdf:about* attribute it can find in the dyno/index.html file. You can
 see from that file's code:
-[source, html]
 ----
     <div id="dyno-attributes" rdf:about="http://dbpedia.org/resource/Bologna">
 ----
@@ -165,7 +161,6 @@ be ok, unless the service gave you a different port number.
 
 If you deployed the *war on Tomcat of GlassFish* then, assuming the
 server is on port 8080, the value would be:
-[source, javascript]
 ----
         source: 'http://localhost:8080/sindice',
 ----
@@ -188,7 +183,6 @@ A query response from the bridge can take some time. By default Dyno
 waits 30 seconds before crying foul. This is usually more than enough
 to get an answer from the bridge. If you want to change the timeout
 milliseconds value, you can do so with:
-[source, javascript]
 ----
     var settings = {
     ...
@@ -220,10 +214,8 @@ TIP: if you get a "Timeout, 30 seconds have passed..." error,
 it's likely you either haven't started the bridge service, or it is
 not configured correctly.
 
-
 If you want to see a more interesting example, try setting uris to the
 following values:
-[source, javascript]
 ----
         uris: ["http://sws.geonames.org/3181928/", "http://dbpedia.org/resource/Bologna"],
 ----
@@ -245,7 +237,6 @@ Load Dyno as a popup or similar
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This is easy, in fact, this is how it was used in the original project.
 This code in javascripts/main.js:
-[source, javascript]
 ----
     /// An example of how to get the required uri from the opener page if 
     /// Dyno is shown in a popup or similar fashion.
@@ -291,7 +282,6 @@ hovering over the [?] and [source?] links.
 When changing the HTML be careful that nothing is broken, Dyno expects
 some elements, css ids and classes to be present. For example,
 empty sections like these:
-[source, html]
 ----
         <div id="dyno-title"><h1></h1></div>
         <div id="sources">
@@ -299,7 +289,6 @@ empty sections like these:
         </div>
 ----
 *and*
-[source, html]
 ----
       <div class="dyno-attribute">
         <span class="dyno-name"><p></p></span>
